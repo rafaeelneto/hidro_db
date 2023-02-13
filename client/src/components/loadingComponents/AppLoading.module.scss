@@ -1,0 +1,17 @@
+@import '../../styles/colors';
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 100px;
+}
+
+.containers {
+  margin-bottom: 10px;
+  color: $darkText;
+}

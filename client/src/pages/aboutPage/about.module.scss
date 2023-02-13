@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/app.global.scss';
+
+.root {
+  flex-grow: 1;
+  display: flex;
+  background-color: rgb(239, 243, 245);
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  max-width: 1012px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.creditsHeader {
+  padding: 10px;
+  .title {
+    @extend %body-primary;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 48px;
+    color: $colorPrimaryDark;
+  }
+  .body {
+    @extend %body-primary;
+  }
+}
+.creditsContainer {
+  padding: 10px;
+}
+
+.title {
+  @extend %h2-heading;
+  color: $colorPrimaryDark;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.names {
+  @extend %body-primary;
+  font-size: 1em;
+  padding-top: 5px;
+}
+
+.innerContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.backBtn {
+  fill: $darkText;
+}

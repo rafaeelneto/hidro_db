@@ -1,0 +1,35 @@
+.container {
+  min-width: 300px;
+  min-height: 500px;
+  padding: 20px;
+}
+
+.selectAllCheckbox {
+  display: flex;
+  align-items: center;
+  .btn {
+    margin-right: 10px;
+  }
+}
+
+.optionsContainer {
+  margin: 10px 0 10px 0;
+}
+
+.backdrop {
+  z-index: 4;
+  color: white;
+  min-width: 300px;
+  min-height: 500px;
+}
+
+.btnContainer {
+  position: relative;
+  width: 100%;
+}
+
+.btnExport {
+  color: white;
+  fill: white;
+  font-weight: 700;
+}

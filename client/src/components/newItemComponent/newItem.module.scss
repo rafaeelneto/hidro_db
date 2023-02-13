@@ -1,0 +1,13 @@
+.root {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 700px;
+  overflow-x: auto;
+}

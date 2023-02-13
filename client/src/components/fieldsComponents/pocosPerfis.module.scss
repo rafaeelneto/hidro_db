@@ -1,0 +1,85 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+@import '../../styles/fonts';
+@import '../../styles/app.global.scss';
+
+.fieldWrapper {
+  padding: 10px;
+  height: fit-content;
+}
+
+.perfilContainer {
+  height: 100%;
+  position: relative;
+}
+
+.perfilContainerEmpty {
+  height: 100%;
+}
+
+.uploadButton {
+  width: 100%;
+}
+
+.d3Container {
+  min-width: 200px;
+  width: 100%;
+
+  @include lg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.svgContainer {
+  min-width: 200px;
+  width: 100%;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  width: fit-content;
+  max-width: 200px;
+  font-family: $fontLato;
+  box-shadow: 0 3px 10px rgba(66, 66, 66, 0.384);
+  color: $darkText;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  .title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $fontSourcePro;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: $colorPrimaryDark;
+    margin-bottom: 5px;
+  }
+  .primaryInfo {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .secondaryInfo {
+    font-size: 12px;
+    strong {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}
+
+.noFilesMsg {
+  color: $lightText;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.noFilesMsg {
+  @extend %emptyListSpan;
+  height: auto;
+}

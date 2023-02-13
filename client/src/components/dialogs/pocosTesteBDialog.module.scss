@@ -1,0 +1,255 @@
+@import '../../styles/colors';
+@import '../../styles/app.global.scss';
+.dialogContentWrapper {
+  width: 500px;
+  height: 500px;
+}
+
+.topBtns {
+  margin-right: 10px;
+}
+
+.btnCancel {
+  color: $red;
+  border-color: $red;
+
+  &:hover {
+    border-color: $red;
+    background-color: #ff586034;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  height: 30px;
+}
+
+.listContainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.itemDetails {
+  display: block;
+  .secundaryText {
+    display: block;
+    font-size: 14px;
+    color: $lightText;
+  }
+}
+
+.editContainer {
+  padding: 15px;
+}
+
+.editCollapse {
+  margin: 10px 0 10px 0;
+}
+
+.listContainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.newContainer {
+  padding: 15px;
+}
+
+.newCollapse {
+  margin: 10px 0 10px 0;
+}
+
+.itemContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+}
+
+.itemDetails {
+  display: block;
+  .secundaryText {
+    display: block;
+    font-size: 14px;
+    color: $lightText;
+  }
+  margin-bottom: 10px;
+}
+
+%itemBtn {
+  fill: $red;
+  color: $red;
+
+  svg {
+    height: 20px;
+  }
+}
+
+.deleteBtnWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+$sizeBtn: 32px;
+
+.deleteBtn {
+  @extend %itemBtn;
+  fill: $red;
+  color: $red;
+  height: $sizeBtn;
+}
+
+.deleteProgress {
+  color: $red;
+  position: absolute;
+  left: 50%;
+  margin-left: -$sizeBtn/2;
+  top: 50%;
+  margin-top: -$sizeBtn/2;
+}
+
+.editBtn {
+  @extend %itemBtn;
+  color: $colorPrimary;
+  margin-right: 10px;
+}
+
+.noFilesMsg {
+  @extend %emptyListSpan;
+  height: auto;
+}
+
+.dialogContentWrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+.newContainer {
+  padding: 15px;
+  width: 100%;
+}
+
+.newCollapse {
+  margin: 10px 0 10px 0;
+  max-width: 1100px;
+  padding: 10px;
+}
+
+.editContainerRoot {
+  width: 100%;
+}
+
+.headerFieldsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 100%;
+}
+
+.field {
+  margin: 10px;
+  min-width: 300px;
+
+  .innerTextFiel {
+    margin: 0;
+  }
+}
+
+.bombContainer {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.tabsContainer {
+  background-color: white;
+}
+
+.etapasWrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.etapaContainer {
+  width: 100%;
+  min-width: 300px;
+  margin: 5px;
+  margin-top: 10px;
+
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid $lightText;
+  border-radius: 15px;
+  width: fit-content;
+
+  .title {
+    margin-bottom: 5px;
+    @extend %subtitle;
+  }
+  .field {
+    margin: 0;
+    margin-bottom: 10px;
+    min-width: 300px;
+  }
+  .info {
+    margin-top: 10px;
+    .infoTitle {
+      font-weight: 700;
+    }
+  }
+}
+
+.bombDataContainer {
+  border-radius: 15px;
+  border: 1px solid $lightText;
+}
+
+.pontosContainer {
+  height: 500px;
+  width: 100%;
+}

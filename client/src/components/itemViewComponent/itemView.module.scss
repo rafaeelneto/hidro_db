@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+.root {
+  max-height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.backBtn {
+  fill: $darkText;
+}
+
+.subPageHeader {
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-items: start;
+  justify-content: start;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+
+  @include md {
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    flex-direction: row;
+  }
+}

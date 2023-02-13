@@ -1,0 +1,55 @@
+@import './_fonts.scss';
+@import './_colors.scss';
+
+%btn {
+  font-family: $fontSourcePro;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+%btn-secondary {
+  @extend %btn;
+  background-color: $colorSecondary;
+  color: white;
+}
+
+%btn-active {
+  color: $colorSecondaryLight;
+}
+
+%h2-heading {
+  font-family: $fontSourcePro;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+%subtitle {
+  font-family: $fontSourcePro;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+%body-primary {
+  font-family: $fontLato;
+  color: $darkText;
+}
+
+%link {
+  color: $colorPrimaryDark;
+  text-decoration: underline;
+  font-family: $fontLato;
+  font-weight: 700;
+}
+
+%emptyListSpan {
+  color: $lightText;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}

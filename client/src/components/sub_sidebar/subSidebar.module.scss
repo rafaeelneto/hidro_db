@@ -1,0 +1,27 @@
+@import '../../styles/colors';
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnContainer {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  margin: 5px 0 5px 0;
+  color: $colorPrimary;
+  justify-content: start;
+  text-align: start;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btnActive {
+  color: $colorSecondary;
+  background-color: #f3f0ed;
+}

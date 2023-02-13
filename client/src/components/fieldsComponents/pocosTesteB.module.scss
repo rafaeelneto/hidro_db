@@ -1,0 +1,70 @@
+@import './../../styles/_colors.scss';
+@import './../../styles/app.global.scss';
+
+.fieldWrapper {
+  padding: 10px;
+  height: fit-content;
+}
+
+.perfilContainer {
+  height: 800px;
+}
+
+.perfilContainerEmpty {
+  height: 100%;
+}
+
+.uploadButton {
+  width: 100%;
+}
+
+.noFilesMsg {
+  color: $lightText;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.noFilesMsg {
+  @extend %emptyListSpan;
+  height: auto;
+}
+
+.listContainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.itemContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+}
+
+.itemDetails {
+  display: block;
+  .secundaryText {
+    display: block;
+    font-size: 14px;
+    color: $lightText;
+  }
+  margin-bottom: 10px;
+}

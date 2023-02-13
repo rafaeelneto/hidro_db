@@ -1,0 +1,69 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+@import '../../styles/fonts';
+.root {
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tileLabel {
+  color: $darkText;
+  display: block;
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.subPageHeader {
+  padding-bottom: 20px;
+  width: 100%;
+  @include md {
+    width: 50%;
+  }
+}
+
+.gridTile {
+  flex-grow: 1;
+  max-width: 500px;
+  &.muigridlisttile-tile {
+    padding: 10px;
+    display: flex;
+  }
+}
+
+.tile {
+  min-width: 100%;
+  @include md {
+    min-width: 200px;
+  }
+}
+
+.masonryGrid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.masonryGridColumn {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.masonryGridColumn > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+.userInfo {
+  margin-top: 5px;
+  color: $lightText;
+  font-style: italic;
+}

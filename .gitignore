@@ -1,0 +1,10 @@
+*/node_modules/
+
+server/public/build/
+
+*/debug.log
+
+*/.env
+*/.env.production
+
+server/cred.json

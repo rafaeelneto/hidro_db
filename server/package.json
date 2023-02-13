@@ -1,0 +1,61 @@
+{
+  "name": "HIDRO-db",
+  "version": "1.0.0",
+  "description": "Project of API to access and control water assets informations",
+  "author": "Rafael Gomes",
+  "main": "app.js",
+  "scripts": {
+    "webpack": "webpack --watch --mode development",
+    "webpack-production": "webpack --mode production",
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*"
+    ]
+  },
+  "keywords": [
+    "hidro",
+    "water",
+    "database"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.8.5",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "bcryptjs": "^2.4.3",
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3",
+    "express-session": "^1.16.2",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.10.4",
+    "helmet": "^3.23.3",
+    "html-to-text": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.17",
+    "pug": "^3.0.2",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "airbnb": "0.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}

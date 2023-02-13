@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+@import '../../styles/app.global.scss';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  @include md {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.button {
+  margin: 0 0 5px 0;
+  border-radius: 10px 10px 0 0;
+  & .icon {
+    & path {
+      stroke: #fff !important;
+    }
+    & line {
+      stroke: #fff !important;
+    }
+    height: 35px;
+    width: auto;
+  }
+
+  @include md {
+    margin: 5px 0 5px 0;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.buttonActive {
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  & .icon {
+    height: 35px;
+    & path {
+      fill: $colorSecondary;
+    }
+  }
+  &:hover {
+    background: #fff;
+    & .icon {
+      & path {
+        fill: $colorSecondaryLight;
+      }
+    }
+  }
+  @include md {
+    margin: 5px 0 5px 0;
+    border-radius: 10px 0 0 10px;
+  }
+}

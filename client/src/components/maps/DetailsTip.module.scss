@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+.root {
+  min-height: 90px;
+  min-width: 180px;
+  padding: 5px;
+}
+
+.infoBtn {
+  display: flex;
+}
+
+.main {
+  color: $darkText;
+  margin-block-end: 5px;
+  margin-block-start: 5px;
+}
+
+.secundary,
+.terciary {
+  color: $lightText;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.secundary {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.terciary {
+  font-size: 12px;
+  margin-bottom: 10px;
+}

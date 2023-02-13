@@ -1,0 +1,96 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+@import '../../styles/app.global.scss';
+.root {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+}
+
+.searchContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  .searchInput {
+    // vertical padding + font size from searchIcon
+    // transition: theme.transitions.create('width'),
+    width: 100%;
+    @include md {
+      max-width: 400px;
+    }
+  }
+
+  .cleanSearchBtn {
+    padding: 5px;
+    color: $lightText;
+  }
+}
+
+$timeTransition: 0.2s;
+
+.listContainer {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: all $timeTransition ease-in-out;
+  -moz-transition: all $timeTransition ease-in-out;
+  -ms-transition: all $timeTransition ease-in-out;
+  -o-transition: all $timeTransition ease-in-out;
+  transition: all $timeTransition ease-in-out;
+  opacity: 0;
+  top: 100%;
+
+  @include md {
+    width: 400px;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 0.9;
+    top: 120%;
+    display: block;
+  }
+}
+
+.loading {
+  justify-self: center;
+}
+
+.tableLabel {
+  @extend %btn-secondary;
+  padding: 2px 10px 2px 10px;
+  border-radius: 10px;
+}
+
+.listItem {
+  font-size: 14px;
+  &:hover {
+    color: $colorPrimary;
+  }
+}
+
+.userInfo {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userNameBtn {
+  color: $darkText;
+  font-weight: 400;
+  font-size: 12pt;
+  text-transform: none;
+  letter-spacing: 1px;
+}

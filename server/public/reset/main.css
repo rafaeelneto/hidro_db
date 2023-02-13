@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*Overflow overlay to make overflow over the content*/
+  overflow: overlay;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.logo-db {
+  max-height: 150px;
+  margin-bottom: 50px;
+}
+
+#new-psw-form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.form-field {
+  border-radius: 4px;
+  border: 1px solid #3a3a3a;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 18.5px 14px;
+  font-size: 1rem;
+}
+
+.form-field:focus {
+  border: 2px solid #27c4d9;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #27c4d9;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.error {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  padding: 7px;
+  text-align: center;
+  border: 2px solid rgb(238, 54, 79);
+  background-color: rgba(238, 54, 79, 0.26);
+  color: rgb(238, 54, 79);
+}
+
+.error.show {
+  display: block;
+}

@@ -1,0 +1,55 @@
+@import './../../styles/colors';
+@import './../../styles/fonts';
+@import './../../styles/breakpoints';
+
+@import './../../styles/app.global.scss';
+.footer {
+  display: flex;
+  min-height: auto;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+
+  .tileContainer {
+    max-width: 1000px;
+    border-top: 1px solid $darkText;
+    padding-top: 10px;
+    margin: 15px 0 15px 0;
+    min-width: 1000px;
+    display: flex;
+
+    flex-direction: column;
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.logosWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logos {
+  height: 70px;
+  margin-right: 20px;
+}
+
+.credits {
+  font-family: $fontLato;
+  font-size: 16px;
+  color: $darkText;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  font-weight: 400;
+}
+
+.creditsMain {
+  font-weight: 800;
+}
+
+.creditsWrapper {
+  flex: 1 1 auto;
+}

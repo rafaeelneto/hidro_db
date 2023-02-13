@@ -1,0 +1,35 @@
+@import '../../styles/colors';
+
+.root {
+  flex-grow: 1;
+  display: flex;
+  background-color: rgb(239, 243, 245);
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  max-width: 1012px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.tabsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.innerContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.backBtn {
+  fill: $darkText;
+}

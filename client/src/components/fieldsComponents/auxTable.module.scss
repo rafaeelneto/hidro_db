@@ -1,0 +1,41 @@
+@import '../../styles/colors';
+.fieldWrapper {
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+}
+
+.container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+span {
+  display: block;
+}
+
+.main {
+  font-size: 16px;
+  margin-block-end: 5px;
+}
+
+.secundary {
+  font-size: 14px;
+  color: $lightText;
+}
+
+.noMsg {
+  font-size: 16px;
+  margin-block-end: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: $lightText;
+}
+
+.fieldContainer {
+  width: 100%;
+  display: flex;
+}

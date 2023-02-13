@@ -1,0 +1,195 @@
+@import './../../styles/colors';
+@import './../../styles/fonts';
+@import './../../styles/breakpoints';
+
+@import './../../styles/app.global.scss';
+
+a {
+  text-decoration: none;
+}
+
+.root {
+  width: 100%;
+  height: 100vh;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+}
+
+.headerLogo {
+  height: 50px;
+  display: none;
+
+  @include md {
+    display: inline;
+  }
+}
+
+.navBtn {
+  @extend %btn;
+  color: $darkText;
+  backgroud-color: white;
+  margin: 0 5px;
+  letter-spacing: 2px;
+  height: 25px;
+  &:hover {
+    background-color: #0000002a;
+  }
+}
+
+.login_section_btn {
+  @extend %btn-secondary;
+  color: white;
+  &:hover {
+    background-color: $colorSecondaryLight !important;
+    text-decoration: none;
+  }
+}
+
+.heroTile {
+  height: 90%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .heroLogo {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tileTitle {
+    color: $darkText;
+    text-transform: uppercase;
+  }
+
+  .tileContainer {
+    flex-direction: column;
+  }
+  @include md {
+    .heroLogo {
+      width: 600px;
+    }
+
+    .tileContainer {
+      flex-direction: row-reverse;
+    }
+
+    .tileTextWrapper {
+      width: 100%;
+    }
+  }
+}
+
+.login_tile {
+  // background: theme.palette.backgroundLightGray;
+  // height: variables.login_tile.mobile.height;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .login_container {
+    display: inherit;
+    align-content: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tile {
+  min-height: 500px;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+
+  @include md {
+    display: flex;
+  }
+}
+
+.tileContainer {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.tileTextWrapper {
+}
+
+.tileImg {
+  width: 100%;
+
+  @include md {
+    height: 400px;
+    margin-left: 20px;
+  }
+}
+
+.tileTitle {
+  font-family: $fontSourcePro;
+  color: $colorPrimaryDark;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tileText {
+  color: $darkText;
+  font-family: $fontLato;
+}
+
+.collaborationTile {
+  background-color: $colorSecondaryLight;
+
+  .login_section_btn,
+  .requestCredentials {
+    width: auto;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    margin-left: 0;
+  }
+
+  .login_section_btn {
+    background-color: $colorSecondaryDark;
+  }
+
+  .requestCredentials {
+    color: $colorSecondaryDark;
+    border: 2px solid $colorSecondaryDark;
+    margin-bottom: 15px;
+  }
+
+  .tileTitle {
+    color: $colorSecondaryDark;
+  }
+}
+
+.collaborationTileContainer {
+  flex-direction: column;
+  @include md {
+    flex-direction: row-reverse;
+  }
+}
+
+.footer {
+  justify-content: center;
+}

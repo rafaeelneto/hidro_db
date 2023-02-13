@@ -1,0 +1,7 @@
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-content {
+  margin: 2px;
+}

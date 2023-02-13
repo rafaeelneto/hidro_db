@@ -1,0 +1,130 @@
+@import '../../styles/colors';
+@import '../../styles/app.global.scss';
+
+.dialogContent {
+  padding: 15px 24px;
+}
+
+.dialogContentWrapper {
+  width: 500px;
+  height: 500px;
+}
+
+.topBtns {
+  margin-right: 10px;
+}
+
+.btnCancel {
+  color: $red;
+  border-color: $red;
+
+  &:hover {
+    border-color: $red;
+    background-color: #ff586034;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  height: 30px;
+}
+
+.listContainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.newContainer {
+  padding: 15px;
+}
+
+.newCollapse {
+  margin: 10px 0 10px 0;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.itemDetails {
+  display: block;
+  .secundaryText {
+    display: block;
+    font-size: 14px;
+    color: $lightText;
+  }
+}
+
+.itemActionContainer {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.editContainer {
+  padding: 15px;
+}
+
+.editCollapse {
+  margin: 10px 0 10px 0;
+}
+
+%itemBtn {
+  fill: $red;
+  color: $red;
+
+  svg {
+    height: 20px;
+  }
+}
+
+.deleteBtn {
+  @extend %itemBtn;
+  fill: $red;
+  color: $red;
+}
+
+.editBtn {
+  @extend %itemBtn;
+  color: $colorPrimary;
+  margin-right: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.noFilesMsg {
+  @extend %emptyListSpan;
+  height: auto;
+}
+
+.appBar {
+  position: relative;
+  background-color: white;
+  box-shadow: none;
+}

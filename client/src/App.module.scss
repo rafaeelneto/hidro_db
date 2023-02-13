@@ -1,0 +1,17 @@
+@import './styles/breakpoints';
+.loadingContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingComponent {
+  width: 100%;
+  @include md {
+    display: flex;
+    width: 400px;
+  }
+}

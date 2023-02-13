@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+.actionBtns {
+  fill: $darkText;
+  color: $darkText;
+  font-weight: 700;
+
+  @include md {
+    margin-left: 10px;
+  }
+}
+
+.root {
+  max-height: 100%;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.tabsContainer {
+  width: 100%;
+}
+
+.subPageHeader {
+  padding-bottom: 20px;
+  display: flex;
+  justify-items: start;
+  justify-content: start;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+
+  @include lg {
+    align-items: center;
+    width: auto;
+    flex-direction: row;
+  }
+}
+
+.editContainer {
+  @include md {
+    margin-left: auto;
+  }
+}
+
+.mainBtnsContainer {
+  display: flex;
+}
+
+.title {
+  color: $darkText;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,187 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+@import '../../styles/app.global.scss';
+
+.root {
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  @include lg {
+    overflow-y: hidden;
+  }
+  .title {
+    color: $darkText;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.detailsContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.navContainer {
+  padding-top: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include lg {
+    width: 500px;
+  }
+}
+
+.optionsContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.btnNav {
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+  margin: 5px 5px 0 0;
+}
+
+.d3Container {
+  min-height: 500px;
+  min-width: 400px;
+  height: 100%;
+  width: 100%;
+  @include lg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.list {
+  overflow-y: auto;
+  & > div:first-child {
+    margin-top: 20px;
+  }
+  .municipioItem {
+    color: $lightText;
+  }
+  .municipioItemOperado {
+    color: $colorPrimaryDark;
+    font-weight: 700;
+  }
+  .municipioItemSelected {
+    color: $colorSecondary;
+    font-weight: 700;
+  }
+}
+
+.municipio {
+  stroke-width: 2px;
+  stroke: white;
+  vector-effect: non-scaling-stroke;
+  fill: #cfd8dc;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: fit-content;
+  font: 16px sans-serif;
+  box-shadow: 0 3px 10px rgba(66, 66, 66, 0.384);
+  color: $darkText;
+  font-weight: 700;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.detailsRoot {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  @include lg {
+    padding-top: 0px;
+  }
+
+  .title {
+    color: $darkText;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .codMun {
+    color: $lightText;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .tableContainer {
+    margin-top: 10px;
+  }
+
+  .tableTitle {
+    color: $darkText;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .listUnidades {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .unidadeItem {
+    width: 200px;
+  }
+  .unidadeContainer {
+    width: 200px;
+
+    .primary {
+      @extend %link;
+      text-decoration: none;
+    }
+
+    .secundary {
+      color: $lightText;
+      font-size: 12px;
+      width: 100%;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.noInfoMsg {
+  @extend %emptyListSpan;
+  text-align: left;
+  margin-top: 20px;
+}

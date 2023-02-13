@@ -1,0 +1,12 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+  <color name="primaryColor">#197f8c</color>
+  <color name="primaryLightColor">#56afbc</color>
+  <color name="primaryDarkColor">#00525f</color>
+  <color name="secondaryColor">#ff9e2e</color>
+  <color name="secondaryLightColor">#ffcf60</color>
+  <color name="secondaryDarkColor">#c66f00</color>
+  <color name="primaryTextColor">#ffffff</color>
+  <color name="secondaryTextColor">#000000</color>
+  <color name="ficabomcomSecundary">#FF8E53</color>
+</resources>

@@ -1,0 +1,209 @@
+@import '../../styles/colors';
+@import '../../styles/app.global.scss';
+@import '../../styles/fonts';
+@import '../../styles/breakpoints';
+
+.root {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px 10px 10px;
+  position: relative;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    justify-content: space-between;
+    max-height: 60px;
+    flex-direction: row;
+  }
+}
+
+.btnContainer {
+  height: auto;
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  button {
+    margin-right: 10px;
+  }
+
+  @include md {
+    justify-content: end;
+  }
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+
+  @include md {
+    overflow: hidden;
+    flex-direction: row;
+  }
+}
+
+.perfilContainer,
+.dataContainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.perfilContainer {
+  margin-right: 10px;
+  padding: 5px;
+  position: relative;
+  @include md {
+    width: 35%;
+  }
+}
+
+.mainBtns {
+  margin-right: 15px;
+}
+
+.dataContainer {
+  margin-top: 5px;
+  position: relative;
+  @include md {
+    margin-top: 0;
+    width: 65%;
+  }
+}
+
+.componentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.componentTitle {
+  font-size: 18px;
+  font-family: $fontLato;
+  font-weight: 700;
+  color: $darkText;
+}
+
+.collapseBtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  justify-content: flex-start;
+
+  font-family: $fontSourcePro;
+  font-size: 18px;
+
+  &:hover {
+    color: rgb(110, 110, 110);
+  }
+}
+
+.sortableList {
+  li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.btnAdd {
+  color: $colorPrimary;
+  margin-top: 5px;
+  border-radius: 10px;
+  :global {
+    .MuiListItemIcon-root {
+      color: $colorPrimary;
+    }
+  }
+}
+
+.noFilesMsg {
+  @extend %emptyListSpan;
+  height: auto;
+}
+
+.layerRow {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 300px;
+  @include md {
+    flex-direction: row;
+  }
+  .layerInput {
+    margin-top: none;
+  }
+}
+
+.layerInput {
+  margin: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: fit-content;
+  min-width: 50px;
+  @include md {
+    min-width: 200px;
+  }
+}
+
+.radioInput {
+  margin-top: 10px;
+  margin: 5px;
+  legend {
+    font-size: 12px;
+  }
+}
+
+.radioEA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  // :global {
+  //   .MuiFormControlLabel-root {
+  //     color: red;
+  //   }
+  // }
+}
+
+.colorInput {
+  display: flex;
+  align-items: center;
+}
+
+.colorBtn {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.colorPicker {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+
+.inputContainers {
+  height: 100%;
+  overflow-y: auto;
+}

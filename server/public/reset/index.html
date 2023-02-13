@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HIDRO-db | Nova senha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="container">
+        <img src="./logo-hidro.png" class="logo-db" />
+        <form id="new-psw-form" autocomplete="off" onSubmit="handleSubmit">
+          <input
+            placeholder="Nova senha"
+            class="form-field"
+            type="password"
+            name="psw"
+            id="psw"
+            required
+          />
+          <input
+            placeholder="Repita a nova senha"
+            class="form-field"
+            type="password"
+            name="pswConfirm"
+            id="pswConfirm"
+            required
+          />
+          <button class="submit-btn" login-btn`} type="submit">
+            RESETAR SENHA
+          </button>
+        </form>
+        <div class="error">
+          Coloque uma senha com no mínimo 6 dígitos
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- From UNPKG -->
+  <script src="https://unpkg.com/v8n/dist/v8n.min.js"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      var psw = document.getElementById('psw').value;
+      var pswConfirm = document.getElementById('pswConfirm').value;
+
+      var errorElement = document.getElementsByClassName('error')[0];
+
+      if (!v8n().string().minLength(6).test(psw)) {
+        errorElement.classList.add('show');
+        setTimeout(() => {
+          errorElement.classList.remove('show');
+        }, 3000);
+        return;
+      }
+
+      if (!v8n().string().minLength(6).test(pswConfirm) || pswConfirm === psw) {
+        errorElement.classList.add('show');
+        errorElement.innerHTML =
+          'Insira uma senha com 6 digítos e que seja igual a sua senha';
+        setTimeout(() => {
+          errorElement.classList.remove('show');
+        }, 3000);
+        return;
+      }
+
+      var queryString = window.location.search;
+      var urlParams = new URLSearchParams(queryString);
+      var resetToken = URLSearchParams.get('reset-token');
+
+      axios
+        .post('/v1/api/user/resetPassword/' + resetToken, {
+          psw,
+          pswConfirm,
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+
+    var form = document.getElementById('new-psw-form');
+    form.addEventListener('submit', handleSubmit);
+  </script>
+</html>

@@ -1,0 +1,46 @@
+@import './../../styles/_colors.scss';
+
+.fieldWrapper {
+  padding: 10px;
+}
+
+.uploadButton {
+  width: 100%;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.itemDetails {
+  display: block;
+  margin-bottom: 10px;
+  .secundaryText {
+    display: block;
+    font-size: 12px;
+    color: $lightText;
+  }
+}
+
+.noFilesMsg {
+  color: $lightText;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}

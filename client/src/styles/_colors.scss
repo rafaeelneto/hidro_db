@@ -1,0 +1,32 @@
+@import 'sass-material-colors';
+
+$colorPrimary: #27c4d9;
+$colorPrimaryLight: #6ff7ff;
+$colorPrimaryDark: #0093a7;
+
+$colorSecondary: #ff9e2e;
+$colorSecondaryLight: #ffcf60;
+$colorSecondaryDark: #c66f00;
+
+$red: #ed0735;
+$redLight: #ff585f;
+$redDark: #b2000f;
+
+$lightText: material-color('blue-grey', '300');
+$darkText: material-color('blue-grey', '800');
+
+$error-light: #e57373;
+$error-main: #f44336;
+$error-dark: #d32f2f;
+
+$warning-light: #ffb74d;
+$warning-main: #ff9800;
+$warning-dark: #f57c00;
+
+$info-light: #64b5f6;
+$info-main: #2196f3;
+$info-dark: #1976d2;
+
+$sucess-light: #81c784;
+$sucess-main: #4caf50;
+$sucess-dark: #388e3c;

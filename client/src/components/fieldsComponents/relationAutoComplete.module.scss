@@ -1,0 +1,94 @@
+@import './../../styles/_colors.scss';
+@import './../../styles/app.global.scss';
+.fieldWrapper {
+  padding: 10px;
+}
+
+.autoComplete {
+  width: 100%;
+  padding: 5px;
+  .MuiFormControl-marginNormal {
+    margin-top: 2px;
+  }
+}
+
+.listItem {
+  padding-left: 2px;
+  @extend %link;
+}
+
+.progressBar {
+  width: 100%;
+}
+
+.deleteBtnWrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+$sizeBtn: 32px;
+.deleteBtn {
+  height: $sizeBtn;
+  width: $sizeBtn;
+  fill: $red;
+  position: absolute;
+  left: 50%;
+  margin-left: -$sizeBtn/2;
+  top: 50%;
+  margin-top: -$sizeBtn/2;
+  padding: 0;
+}
+
+.deleteProgress {
+  color: $red;
+  position: absolute;
+  height: $sizeBtn;
+  width: $sizeBtn;
+  top: -15px;
+  right: 10px;
+  left: 50%;
+  margin-left: -$sizeBtn/2;
+  top: 50%;
+  margin-top: -$sizeBtn/2;
+  z-index: 1;
+}
+
+.errorMsg {
+  display: block;
+  color: $red;
+}
+
+.noFilesMsg {
+  color: $lightText;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.popper {
+  border-radius: 3px;
+  width: 300px;
+  z-index: 1;
+  color: #586069;
+  background-color: #f6f8fa;
+}
+
+.settingBtn {
+  font-size: 13;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 8;
+  color: #586069;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: #0366d6;
+  }
+}
+
+.settingIcon {
+  height: 16px;
+}

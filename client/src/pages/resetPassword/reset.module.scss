@@ -1,0 +1,78 @@
+@import './../../styles/breakpoints';
+@import './../../styles/colors';
+@import './../../styles/fonts';
+
+@import './../../styles/app.global.scss';
+
+.root {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  max-height: 900px;
+  display: flex;
+  margin: 5px auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+
+  @include md {
+    max-width: none;
+    max-height: none;
+  }
+}
+
+.formContainer {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    @extend %h2-heading;
+  }
+
+  p {
+    @extend %body-primary;
+  }
+
+  @include md {
+    width: 400px;
+    padding: 5px;
+  }
+}
+
+.logoDB {
+  width: 200px;
+  margin: 20px 0 20px 0;
+}
+
+.pswForm {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  min-width: 300px;
+  width: 100%;
+
+  @include md {
+  }
+}
+
+.formField {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.submitBtn {
+  @extend %btn;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  background-color: $colorPrimary;
+}
