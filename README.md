@@ -1,6 +1,6 @@
 # HIDRO-db
 
-Development of a platform that
+Development of a platform that manages wells and others assets
 Desenvolvimento de uma interface acessível para o banco de dados contendo os pontos de captação de água.
 
 ## Banco de dados
