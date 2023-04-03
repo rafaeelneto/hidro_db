@@ -15,6 +15,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+import styles from './mainField.module.scss';
+
 const NULL_VALUE = { value: '', label: '' };
 
 const TextFieldComponent = ({ field, tableName, featureId }: FieldComponentType) => {
@@ -58,7 +60,7 @@ const TextFieldComponent = ({ field, tableName, featureId }: FieldComponentType)
       <Input
         error={error}
         disableUnderline={!isOnEdit}
-        className={classes.mainInput}
+        className={styles.mainInput}
         id="component-simple"
         value={value}
         onChange={handleChange}
