@@ -1,5 +1,5 @@
 {
-  "name": "HIDRO-db Client",
+  "name": "hidro-db_client",
   "version": "0.6.0",
   "private": true,
   "dependencies": {
